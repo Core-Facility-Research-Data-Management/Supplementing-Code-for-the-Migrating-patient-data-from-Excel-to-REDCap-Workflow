@@ -1,0 +1,70 @@
+{
+    "creators": [
+        {
+            "name": "Rabenstein, Michael",
+            "orcid": "0000-0001-7712-224X",
+            "affiliation": "University of Bonn, University Hospital Bonn, Core Facility Research Data Management, IDM"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "",
+            "type": ""
+        }
+    ],
+    "title": "Supplementing Code for the 'Migrating patient data from Excel to REDCap' Workflow",
+    "version": "1.0",
+    "access_right": "open",
+    "related_identifiers": [
+        {
+            "identifier": "https://doi.org/10.5281/zenodo.20700526",
+            "relation": "isSupplementTo",
+            "resource_type": "workflow"
+            "scheme": "doi"
+        },
+        {
+            "identifier": "https://doi.org/10.5281/zenodo.20700861",
+            "relation": "isDescribedBy",
+            "resource_type": "publication-dissertation"
+            "scheme": "doi"
+        }
+    ],
+    "keywords": [
+        "REDCap",
+        "Data base",
+        "Data Migration",
+        "Microsoft Excel",
+        "Clinical Data"
+    ],
+    "license": "bsd-3-clause",
+    "upload_type": "software",
+    "language": "eng",
+      "custom_fields": {
+    "code:codeRepository": "https://github.com/Core-Facility-Research-Data-Management/Supplementing-Code-for-the-Migrating-patient-data-from-Excel-to-REDCap-Workflow",
+    "code:developmentStatus": {
+      "id": "inactive",
+      "title": {
+        "en": "Inactive"
+      }
+    },
+    "code:programmingLanguage": [
+      {
+        "id": "r",
+        "title": {
+          "en": "R"
+        }
+      },
+      {
+        "id": "jupyter_notebook",
+        "title": {
+          "en": "Jupyter Notebook"
+        }
+      },
+      {
+        "id": "python",
+        "title": {
+          "en": "Python"
+        }
+      }
+    ]
+}
