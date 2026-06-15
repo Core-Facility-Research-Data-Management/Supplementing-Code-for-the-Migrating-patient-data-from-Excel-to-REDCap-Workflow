@@ -5,10 +5,10 @@ This repository contains the code used in the 'Migrating patient data from Excel
 It contains the code for the generation of the dummy data (Create-Dummy-Data-for-TDfRI.ipynb), merging different sheets in an Excel-spreadsheet to a single CSV (Combine-Excel-Sheets-to-CSV.R) and validating the transformed data table (Transform-Data-for-REDCap-Import.ipynb and Transform_Data_for_REDCap_Import_Methods.py).
 
 ## Links to publications that cite the data
-IsSupplementTo:	
+IsDescribedBy: https://doi.org/10.5281/zenodo.20700861
 
 ## Link to ancillary dataset
-IsSupplementedBy and IsSupplementTo:	
+IsSupplementedBy and IsSupplementTo:  https://doi.org/10.5281/zenodo.20700526
 
 ## Description of the Code Files
 
