@@ -3,7 +3,7 @@
 #=========================================================
 
 # Combine Excel Sheets to CSV
-# V05 (2026-05-25)
+# v01.0 (2026-05-25)
 # by Michael Rabenstein ((https://orcid.org/0000-0001-7712-224X))
 #  Code written with the help of: Perplexity AI. (2025). Perplexity AI: AI-powered search engine. https://www.perplexity.ai
 
