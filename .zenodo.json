@@ -7,6 +7,12 @@
             "type": "ProjectMember"
         }
     ],
+    "contributors": [
+    {
+        "name": "",
+        "type": ""
+    }
+    ],     
     "title": "Supplementing Code for the 'Migrating patient data from Excel to REDCap' workflow",
     "version": "1.0",
     "access_right": "open",
@@ -31,5 +37,11 @@
     ],
     "license": "bsd-3-Clause",
     "upload_type": "software",
-    "language": "eng"
+    "language": "eng",    
+    "grants": [
+    {"id":}
+    ],
+    "communities": [
+        {"identifier":}
+    ]
 }
