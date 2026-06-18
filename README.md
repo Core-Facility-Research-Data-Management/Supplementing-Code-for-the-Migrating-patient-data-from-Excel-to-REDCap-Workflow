@@ -30,7 +30,7 @@ It is written in Python 3.12.10 in JupyterLab 4.4.4 and provided as Jupyter Note
 Open notebook in JupyterLab.
 
 ### Combine Excel Sheets to CSV
-V05 (2026-05-25)
+V01.0 (2026-05-25)
 
 #### Files
 Combine-Excel-Sheets-to-CSV.R
@@ -47,7 +47,7 @@ It is written in R 4.5.1 in RStudio 2026.01.2.
 Open file in R or RStudio and set path to demo data file.
 
 ### Transform Data for REDCap Import
-V08 (2026-02-19)<br>
+V01.0 (2026-02-19)<br>
 
 #### Files
 Transform-Data-for-REDCap-Import.ipynb<br>
