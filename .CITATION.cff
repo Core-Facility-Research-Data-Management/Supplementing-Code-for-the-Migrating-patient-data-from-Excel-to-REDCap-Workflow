@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Rabenstein
+  given-names: Michael
+orcid: https://orcid.org/0000-0001-7712-224X
+title: Supplementing Code for the 'Migrating patient data from Excel to REDCap' workflow
+version: v01.0
+date-released: 2026-06-18
