@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Supplementing Code for the 'Migrating patient data from Excel to REDCap' workflow"
+version: 1.0
+license: "bsd-3-Clause"
+type: software
+abstract: "This repository contains the code used in the 'Migrating patient data from Excel to REDCap' workflow. It contains the code for the generation of the dummy data, merging different sheets in an Excel-spreadsheet to a single CSV and validating the transformed data table."
+message: "If you use this software, please cite it as below."
+authors:
+  - given-names: Michael
+    family-names: Rabenstein
+    affiliation: University of Bonn, University Hospital Bonn, Core Facility Research Data Management, IDM
+    orcid: "https://orcid.org/0000-0001-7712-224X"
+keywords:
+  - REDCap
+  - R
+  - Python
+  - Jupyter Notebook
+  - Data base
+  - Data Migration
+  - Clinical Data
