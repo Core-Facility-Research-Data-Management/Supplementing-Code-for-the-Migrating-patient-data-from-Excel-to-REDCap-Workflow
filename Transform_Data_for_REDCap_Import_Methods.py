@@ -1,6 +1,6 @@
 # Methods used in Transform-Data-for-REDCap-Import.ipynb
 """
-V01 (2026-05-25)
+V01.0 (2026-05-25)
 by Michael Rabenstein (https://orcid.org/0000-0001-7712-224X)
 Code written with the help of: Perplexity AI. (2025). Perplexity AI: AI-powered search engine. https://www.perplexity.ai
 and
