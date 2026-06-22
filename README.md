@@ -97,7 +97,7 @@ and<br>
 UKB‑GPT (2026-02-17; institutional LLM based on openai/gpt-oss-120b (OpenAI et al. (2025). gpt-oss-120b & gpt-oss-20b Model Card. arXiv. https://doi.org/10.48550/arXiv.2508.10925))<br>
 
 ## License
-[BSD 3-Clause License](https://gitlab.uni-bonn.de/core-facility-rdm/transform-data-for-redcap-import/-/blob/3b730f0dd1b499532a7fe7d649a7dc1bb5f45d66/LICENSE)
+[BSD 3-Clause License](https://github.com/Core-Facility-Research-Data-Management/Supplementing-Code-for-the-Migrating-patient-data-from-Excel-to-REDCap-Workflow/blob/main/LICENSE)
 
 ## Project status and contributing
 The project is not being actively developed. As a result, new versions will be released only sporadically, if at all. Feel free to fork the project.
