@@ -76,29 +76,36 @@ Use the demo REDCap project files in REDCap to create the demo instance for uplo
 
 #### Usage
 
-**Input:** Data table with the field names of the project in the header and the data dictionary.
-**Output:** Transformed data table with values in text format; a log file with a list of incorrect values.
-**Transform_Data_for_REDCap_Import_Methods.py** Contains functions, used by the notebook. adapt them, in case other validations rules are defined in your REDCap project.
-**Block “Set variables and Paths; Load packages”<.** The paths to the two files are set manually here. In addition, the existing date format of the data table and the delimiters used for the input and output files are set. The block also checks whether the file paths are correct.
-**Block "Import data table and dictionary":** Import the data table and dictionary.
-**Block “Execute transformation”:** The data points are checked and transformed here. If a value cannot be transformed, e.g. text in a number field, the value is replaced by “errorVal”. If numerical values are outside the min-max range defined in the dictionary, they are logged with the field name, value and index. However, these values are not replaced by “errorVal” as REDCap accepts these values. 
-Dates are formatted in DD/MM/YYYY format (relevant for the import options in REDCap).
-If the record ID column is missing in the data table, it is added and filled with values in ascending order from 1.
-Errors during the date transformation, the number of “errorVal”, the values outside the min-max ranges and the header of the transformed data table are output in the block.
-**Block “Export transformed datatable and log”:** Saves the transformed datatable and a log file with the number of “errorVal” and the values outside the min-max ranges. These are saved as a CSV in the data table directory in the “Export” subfolder. The file names consist of the name of the data table, “_transformed_”, and the current datetime. The log file is also extended by “_log”. This means that exported data tables are not overwritten if the export is carried out several times.
+**Input:** Data table with the field names of the project in the header and the data dictionary.<br>
+**Output:** Transformed data table with values in text format; a log file with a list of incorrect values.<br>
+**Transform_Data_for_REDCap_Import_Methods.py** Contains functions, used by the notebook. adapt them, in case other validations rules are defined in your REDCap project.<br>
+**Block “Set variables and Paths; Load packages”<.** The paths to the two files are set manually here. In addition, the existing date format of the data table and the delimiters used for the input and output files are set. The block also checks whether the file paths are correct.<br>
+**Block "Import data table and dictionary":** Import the data table and dictionary.<br>
+**Block “Execute transformation”:** The data points are checked and transformed here. If a value cannot be transformed, e.g. text in a number field, the value is replaced by “errorVal”. If numerical values are outside the min-max range defined in the dictionary, they are logged with the field name, value and index. However, these values are not replaced by “errorVal” as REDCap accepts these values.<br> 
+Dates are formatted in DD/MM/YYYY format (relevant for the import options in REDCap).<br>
+If the record ID column is missing in the data table, it is added and filled with values in ascending order from 1.<br>
+Errors during the date transformation, the number of “errorVal”, the values outside the min-max ranges and the header of the transformed data table are output in the block.<br>
+**Block “Export transformed datatable and log”:** Saves the transformed datatable and a log file with the number of “errorVal” and the values outside the min-max ranges. These are saved as a CSV in the data table directory in the “Export” subfolder. The file names consist of the name of the data table, “_transformed_”, and the current datetime. The log file is also extended by “_log”. This means that exported data tables are not overwritten if the export is carried out several times.<br>
 
-**Manual rework:** You can search for “errorVal” in the exported table. The position determined in this way can then be used in the original data table to check the incorrect values.
+**Manual rework:** You can search for “errorVal” in the exported table. The position determined in this way can then be used in the original data table to check the incorrect values.<br>
 
 
 ## Support
 The codes are provided “as is.” However, if you have any questions, please feel free to send a message to the email address listed in Michael Rabenstein's ORCID profile.
 
 ## Authors and acknowledgment
-by Michael Rabenstein [ORCID](https://orcid.org/0000-0001-7712-224X)
-Code written with the help of: Perplexity AI. (2025). AI-generated content. [https://www.perplexity.ai](https://www.perplexity.ai)
-and
-UKB‑GPT (2026-02-17; institutional LLM based on openai/gpt-oss-120b (OpenAI et al. (2025). gpt-oss-120b & gpt-oss-20b Model Card. arXiv. https://doi.org/10.48550/arXiv.2508.10925))
+by Michael Rabenstein [ORCID](https://orcid.org/0000-0001-7712-224X)<br>
+Code written with the help of:<br>
+Perplexity AI (2025)<sup>1</sup><br>
+UKB‑GPT (2026-02-17; institutional LLM based on openai/gpt-oss-120b<sup>2</sup><br>
+UKB-GPT (2026-10-14; institutional LLM based on Qwen/Qwen3.8-27B-FP8)<sup>3</sup><br>
 
+<sup>1</sup>**Perplexity AI: AI-powered search engine**. https://www.perplexity.ai<br>
+<sup>2</sup>**gpt-oss-120b & gpt-oss-20b Model Card**<br>
+OpenAI: Sandhini Agarwal, Lama Ahmad, Jason Ai, Sam Altman, Andy Applebaum, Edwin Arbus, Rahul K. Arora, Yu Bai, Bowen Baker, Haiming Bao, Boaz Barak, Ally Bennett, Tyler Bertao, Nivedita Brett, Eugene Brevdo, Greg Brockman, Sebastien Bubeck, Che Chang, Kai Chen, Mark Chen, Enoch Cheung, Aidan Clark, Dan Cook, Marat Dukhan, Casey Dvorak, Kevin Fives, Vlad Fomenko, Timur Garipov, Kristian Georgiev, Mia Glaese, Tarun Gogineni, Adam Goucher, Lukas Gross, Katia Gil Guzman, John Hallman, Jackie Hehir, Johannes Heidecke, Alec Helyar, Haitang Hu, Romain Huet, Jacob Huh, Saachi Jain, Zach Johnson, Chris Koch, Irina Kofman, Dominik Kundel, Jason Kwon, Volodymyr Kyrylov, Elaine Ya Le, Guillaume Leclerc, James Park Lennon, Scott Lessans, Mario Lezcano-Casado, Yuanzhi Li, Zhuohan Li, Ji Lin, Jordan Liss, Lily (Xiaoxuan)Liu, Jiancheng Liu, Kevin Lu, Chris Lu, Zoran Martinovic, Lindsay McCallum, Josh McGrath, Scott McKinney, Aidan McLaughlin, Song Mei, Steve Mostovoy, Tong Mu, Gideon Myles, Alexander Neitz, Alex Nichol, Jakub Pachocki, Alex Paino, Dana Palmie, Ashley Pantuliano, Giambattista Parascandolo, Jongsoo Park, Leher Pathak, Carolina Paz, Ludovic Peran, Dmitry Pimenov, Michelle Pokrass, Elizabeth Proehl, Huida Qiu, Gaby Raila, Filippo Raso, Hongyu Ren, Kimmy Richardson, David Robinson, Bob Rotsted, Hadi Salman, Suvansh Sanjeev, Max Schwarzer, D. Sculley, Harshit Sikchi, Kendal Simon, Karan Singhal, Yang Song , Dane Stuckey, Zhiqing Sun, Philippe Tillet, Sam Toizer, Foivos Tsimpourlas, Nikhil Vyas, Eric Wallace, Xin Wang, Miles Wang, Olivia Watkins, Kevin Weil, Amy Wendling, Kevin Whinnery, Cedric Whitney, Hannah Wong, Lin Yang, Yu Yang, Michihiro Yasunaga, Kristen Ying, Wojciech Zaremba, Wenting Zhan, Cyril Zhang, Brian Zhang, Eddie Zhang, Shengjia Zhao. arXiv, 2025.arXiv:2508.10925 (https://doi.org/10.48550/arXiv.2508.10925)<br>
+<sup>3</sup>**Secure On-Premise Deployment of Open-Weights Large Language Models in Radiology: An Isolation-First Architecture with Prospective Pilot Evaluation**<br>
+Sebastian Nowak*, Jann-Frederick Laß*, Narine Mesropyan, Babak Salam, Nico Piel, Wolfgang Block, Alois Martin Sprinkart, Julian Alexander Luetkens, Benjamin Wulff*, Alexander Isaak* (_*contributed equally_). arXiv preprint, 2026. arXiv:2604.22768 (https://doi.org/10.48550/arXiv.2604.22768)
+<br>
 ## License
 [BSD 3-Clause License](https://github.com/Core-Facility-Research-Data-Management/Supplementing-Code-for-the-Migrating-patient-data-from-Excel-to-REDCap-Workflow/blob/main/LICENSE)
 
