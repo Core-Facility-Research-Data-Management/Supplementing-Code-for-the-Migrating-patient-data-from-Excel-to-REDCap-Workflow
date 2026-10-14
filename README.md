@@ -89,6 +89,8 @@ Errors during the date transformation, the number of “errorVal”, the values 
 
 **Manual rework:** You can search for “errorVal” in the exported table. The position determined in this way can then be used in the original data table to check the incorrect values.<br>
 
+#### Patch notes
+V01.1 (2026-10-14): A bug has been fixed in the 'Export transformed data table, log and error report' cell, which caused an error if no out-of-range values were detected (empty out_of_range_log variable).<br>
 
 ## Support
 The codes are provided “as is.” However, if you have any questions, please feel free to send a message to the email address listed in Michael Rabenstein's ORCID profile.
