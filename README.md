@@ -50,7 +50,7 @@ It is written in R 4.5.1 in RStudio 2026.01.2.
 Open file in R or RStudio and set path to demo data file.
 
 ### Transform Data for REDCap Import
-V01.0 (2026-02-19)
+V01.1 (2026-10-14)
 
 #### Files
 Transform-Data-for-REDCap-Import.ipynb
